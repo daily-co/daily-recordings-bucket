@@ -23,7 +23,7 @@ if (
   s3bucketName.trim() === ""
 ) {
   throw new Error(
-    "Must pass a '-c dailySubdomain=<daily_subdomain> s3bucketName=<bucket_name> s3Region=<bucket region>' context parameter"
+    "Must pass a '-c dailySubdomain=<daily_subdomain> s3bucketName=<bucket_name> s3bucketRegion=<bucket region>' context parameter"
   );
 }
 
@@ -34,7 +34,7 @@ if (
   s3bucketRegion.trim() === ""
 ) {
   throw new Error(
-    "Must pass a '-c dailySubdomain=<daily_subdomain> s3bucketName=<bucket_name> s3Region=<bucket region>' context parameter"
+    "Must pass a '-c dailySubdomain=<daily_subdomain> s3bucketName=<bucket_name> s3bucketRegion=<bucket region>' context parameter"
   );
 }
 
