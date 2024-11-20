@@ -17,6 +17,7 @@ export class DailyRecordingBucket extends Stack {
     const recordingsBucket = new aws_s3.Bucket(this, "DailyS3Bucket", {
       bucketName: bucketName,
       encryption: aws_s3.BucketEncryption.S3_MANAGED,
+      versioned: true,
     });
 
     const dailySubdomain = this.node.tryGetContext("dailySubdomain");
