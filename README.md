@@ -37,7 +37,8 @@ curl --request POST \
         "bucket_name": "$AWS_BUCKET_NAME",
         "bucket_region": "us-west-2",
         "assume_role_arn": "arn:aws:iam::1234567890:role/$AWS_ROLE_NAME",
-        "allow_api_access": true
+        "allow_api_access": true,
+        "allow_streaming_from_bucket": true
       }
     }
   }'
